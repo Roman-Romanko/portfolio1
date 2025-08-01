@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative border-b shadow-md px-6 py-2 flex items-center justify-between">
+    <nav className="relative h-16 shadow-md px-6 py-2 flex items-center justify-between z-99 bg-black text-white">
       <div className="text-xl font-bold">
         <img src={Logo} alt="Logo" className="h-8" />
       </div>
@@ -25,9 +25,9 @@ export const Navbar = () => {
         <li><a href="#">Контакти</a></li>
       </ul>
 
-      {/* Mobile Menu (dropdown) */}
+      {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="absolute top-full left-0 w-full shadow-md md:hidden flex flex-col items-center gap-4 px-4 py-3">
+        <ul className="absolute top-full left-0 w-full shadow-md md:hidden flex flex-col items-center gap-4 px-4 py-3 bg-black/60">
           <li><a href="#">Головна</a></li>
           <li><a href="#">Про нас</a></li>
           <li><a href="#">Контакти</a></li>
