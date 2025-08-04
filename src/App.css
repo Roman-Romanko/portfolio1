@@ -6,6 +6,12 @@
   /* padding: 2rem; */
   /* text-align: center; */
 }
+@layer utilities {
+  .draggable-false {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  }
+}
 @theme {
   --font-section1: "Raleway", sans-serif; 
 }

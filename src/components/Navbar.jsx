@@ -20,17 +20,19 @@ export const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6">
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact me</a></li>
       </ul>
 
       {/* Mobile Menu */}
       {menuOpen && (
         <ul className="absolute top-full left-0 w-full shadow-md md:hidden flex flex-col items-center gap-4 px-4 py-3 bg-black/60">
-          <li><a href="#">Головна</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact me</a></li>
         </ul>
       )}
     </nav>

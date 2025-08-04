@@ -1,7 +1,7 @@
 import Person from "../assets/Person.png";
 import { icons } from "../constans";
 
-export const Section1 = () => {
+export const Home = () => {
   return (
     <section className="flex-1 relative bg-black text-white overflow-hidden">
       {/* Absolute blocks inside a relative section */}
@@ -16,7 +16,8 @@ export const Section1 = () => {
       <img
         src={Person}
         alt="Person"
-        className="absolute left-[-20px] top-0 w-[550px] h-auto max-w-none z-9"
+        className="absolute left-[-20px] top-0 w-[550px] h-auto max-w-none z-9 draggable-false"
+        
       />
       <div className="flex items-center gap-6 px-8 py-4 absolute bottom-10">
         {/* Text */}

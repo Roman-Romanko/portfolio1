@@ -1,14 +1,19 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { Section1 } from './components/Section1'
+import { Home } from './components/Home'
+import { Berries } from './components/Berries'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <Section1 />
-    </div>
-  )
+    <main className="flex flex-col">
+        <section className="min-h-screen flex flex-col">
+          <Navbar />
+          <Home />
+        </section>
+        <Berries />
+    </main>
+  );
 }
+
 
 export default App
